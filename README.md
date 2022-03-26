@@ -7,9 +7,7 @@
 
 ## To Do
 
-- Install from scratch.
-- Update license
-- Should package.json dependencies be dev dependencies?
+- None currently.
 
 ## Plugins
 
