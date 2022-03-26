@@ -1,0 +1,16 @@
+---
+tags: main
+layout: default
+title: My Blog
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+
+<div class="mb-4">These are my Blog Articles. Dig it!</div>
+{% set postslist = collections.dog | reverse %}
+<ol>
+  {% for post in postslist  %}
+    <li><a href="{{post.url}}">{{post.data.title}}</a></li>
+  {% endfor %}
+</ol>

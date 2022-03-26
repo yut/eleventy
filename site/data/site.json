@@ -1,0 +1,21 @@
+{
+  "title": "Shared Compass LLC",
+  "url": "https://gregyut.netlify.app",
+  "people": [
+    {
+      "name": "Bill",
+      "url": "/assets/images/monkey.png",
+      "email": "bill@ibm.com"
+    },
+    {
+      "name": "Tom",
+      "url": "/assets/images/monkey.png",
+      "email": "tom@google.com"
+    },
+    {
+      "name": "Mary",
+      "url": "/assets/images/monkey.png",
+      "email": "mary@yahoo.com"
+    }
+  ]
+}

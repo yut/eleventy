@@ -1,0 +1,185 @@
+---
+tags: main
+layout: default
+eleventyNavigation:
+  key: Tailwind
+  order: 6
+---
+
+<div class="m-12 p-4 border rounded-lg bg-slate-100">
+
+  <h2 class="mb-8 text-2xl font-medium text-slate-600">Flex Box</h2>
+
+  <h2 class="text-md font-medium text-slate-600">Flex Auto (stretch, based on initial)</h2>
+  <div class="mb-2 flex space-x-2 text-white text-sm font-bold bg-yellow-100">
+    <div class="flex flex-auto h-12 rounded-lg items-center justify-center bg-orange-500 shadow-lg">This is a longer piece of text</div>
+    <div class="flex flex-auto h-12 rounded-lg items-center justify-center bg-orange-500 shadow-lg">Two</div>
+    <div class="flex flex-auto h-12 rounded-lg items-center justify-center bg-orange-500 shadow-lg">This is a longer piece of text</div>
+    <div class="flex flex-auto h-12 rounded-lg items-center justify-center bg-orange-500 shadow-lg">One</div>
+  </div>
+
+  <h2 class="text-md font-medium text-slate-600">Flex 1 (evenly space)</h2>
+  <div class="mb-2 flex space-x-2 text-white text-sm font-bold bg-yellow-100">
+    <div class="flex flex-1 h-12 rounded-lg items-center justify-center bg-orange-500 shadow-lg">This is a longer piece of text</div>
+    <div class="flex flex-1 h-12 rounded-lg items-center justify-center bg-orange-500 shadow-lg">Two</div>
+    <div class="flex flex-1 h-12 rounded-lg items-center justify-center bg-orange-500 shadow-lg">This is a longer piece of text</div>
+    <div class="flex flex-1 h-12 rounded-lg items-center justify-center bg-orange-500 shadow-lg">One</div>
+  </div>
+
+  <h2 class="text-md font-medium text-slate-600">Flex Initial (maintain initial size)</h2>
+  <div class="mb-2 flex space-x-2 text-white text-sm font-bold bg-yellow-100">
+    <div class="flex flex-initial h-12 rounded-lg items-center justify-center bg-orange-500 shadow-lg">This is a longer piece of text</div>
+    <div class="flex flex-initial h-12 rounded-lg items-center justify-center bg-orange-500 shadow-lg">Two</div>
+    <div class="flex flex-initial h-12 rounded-lg items-center justify-center bg-orange-500 shadow-lg">This is a longer piece of text</div>
+    <div class="flex flex-initial h-12 rounded-lg items-center justify-center bg-orange-500 shadow-lg">One</div>
+  </div>
+
+</div>
+
+
+<div class="m-12 p-4 border rounded-lg bg-slate-100">
+
+  <h2 class="mb-8 text-2xl font-medium text-slate-600">Flex Box, Wrap</h2>
+
+  <div class="mb-2 flex flex-wrap space-x-0 text-white text-sm font-bold bg-yellow-100">
+    <div class="flex flex-auto basis-3/12 h-12 rounded-lg items-center justify-center bg-teal-500 border border-teal-600">One</div>
+    <div class="flex flex-auto basis-5/12 h-12 rounded-lg items-center justify-center bg-teal-500 border border-teal-600 shadow-lg">Two</div>
+    <div class="flex flex-auto basis-3/12 h-12 rounded-lg items-center justify-center bg-teal-500 border border-teal-600 shadow-lg">Three</div>
+
+    <div class="flex flex-1 basis-3/12 h-12 rounded-lg items-center justify-center bg-teal-500 border border-teal-600 shadow-lg">One</div>
+    <div class="flex flex-1 basis-2/12 h-12 rounded-lg items-center justify-center bg-teal-500 border border-teal-600 shadow-lg">Two</div>
+    <div class="flex flex-1 basis-2/12 h-12 rounded-lg items-center justify-center bg-teal-500 border border-teal-600 shadow-lg">Three</div>
+    <div class="flex flex-1 basis-3/12 h-12 rounded-lg items-center justify-center bg-teal-500 border border-teal-600 shadow-lg">Four</div>
+
+    <div class="flex flex-1 basis-1/4 h-12 rounded-lg items-center justify-center bg-teal-500 border border-teal-600 shadow-lg">One</div>
+    <div class="flex flex-1 basis-1/4 h-12 rounded-lg items-center justify-center bg-teal-500 border border-teal-600 shadow-lg">Two</div>
+    <div class="flex flex-1 basis-1/4 h-12 rounded-lg items-center justify-center bg-teal-500 border border-teal-600 shadow-lg">One</div>
+    <div class="flex flex-1 basis-1/4 h-12 rounded-lg items-center justify-center bg-teal-500 border border-teal-600 shadow-lg">One</div>
+  </div>
+
+</div>
+
+
+
+<div class="m-12 p-4 border rounded-lg bg-slate-100">
+
+  <h2 class="mb-8 text-2xl font-medium text-slate-600">Grid</h2>
+
+  <div class="px-8 pb-8 grid gap-8 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+
+    <div>
+      <div class="">
+        <img src="https://via.placeholder.com/200x300" />
+      </div>
+      <div>Title</div>
+      <div>Enroll Today</div>
+      <div>
+        <div class="">
+          <img src="https://via.placeholder.com/40x30" />
+        </div>
+        <p>Presented by <br />
+          <strong>Barry Smith</strong>
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <div class="">
+        <img src="https://via.placeholder.com/200x300" />
+      </div>
+      <div>Title</div>
+      <div>Enroll Today</div>
+      <div>
+        <div class="">
+          <img src="https://via.placeholder.com/40x30" />
+        </div>
+        <p>Presented by <br />
+          <strong>Barry Smith</strong>
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <div class="">
+        <img src="https://via.placeholder.com/200x300" />
+      </div>
+      <div>Title</div>
+      <div>Enroll Today</div>
+      <div>
+        <div class="">
+          <img src="https://via.placeholder.com/40x30" />
+        </div>
+        <p>Presented by <br />
+          <strong>Barry Smith</strong>
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <div class="">
+        <img src="https://via.placeholder.com/200x300" />
+      </div>
+      <div>Title</div>
+      <div>Enroll Today</div>
+      <div>
+        <div class="">
+          <img src="https://via.placeholder.com/40x30" />
+        </div>
+        <p>Presented by <br />
+          <strong>Barry Smith</strong>
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <div class="">
+        <img src="https://via.placeholder.com/200x300" />
+      </div>
+      <div>Title</div>
+      <div>Enroll Today</div>
+      <div>
+        <div class="">
+          <img src="https://via.placeholder.com/40x30" />
+        </div>
+        <p>Presented by <br />
+          <strong>Barry Smith</strong>
+        </p>
+      </div>
+    </div>
+
+
+    <div>
+      <div class="">
+        <img src="https://via.placeholder.com/200x300" />
+      </div>
+      <div>Title</div>
+      <div>Enroll Today</div>
+      <div>
+        <div class="">
+          <img src="https://via.placeholder.com/40x30" />
+        </div>
+        <p>Presented by <br />
+          <strong>Barry Smith</strong>
+        </p>
+      </div>
+    </div>
+
+
+    <div>
+      <div class="">
+        <img src="https://via.placeholder.com/200x300" />
+      </div>
+      <div>Title</div>
+      <div>Enroll Today</div>
+      <div>
+        <div class="">
+          <img src="https://via.placeholder.com/40x30" />
+        </div>
+        <p>Presented by <br />
+          <strong>Barry Smith</strong>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>

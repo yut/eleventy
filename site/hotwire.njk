@@ -1,0 +1,127 @@
+---
+tags: main
+layout: default
+title: Hotwire
+eleventyNavigation:
+  key: Hotwire
+  order: 4
+---
+
+<h1 class="m-4 font-medium text-slate-800 text-2xl">Hotwire Examples</h1>
+
+<div class="flex flex-wrap justify-center gap-2">
+
+  <!-- Turbo Drive -->
+  <div class="mx-4 mb-8 p-6 border border-indigo-200 rounded-lg shadow-md w-96">
+
+    <h2 class="text-xl font-medium text-slate-800">Turbo Drive</h2>
+    <div class="mt-2 mb-4">
+      <a
+        class="underline underline-offset-2 text-sm font-medium text-indigo-400 hover:text-indigo-500"
+        href="https://turbo.hotwired.dev/handbook/drive">
+        Turbo Drive Documentation
+      </a>
+    </div>
+    <p>
+      When the link below is clicked, Turbo Drive will intercept the click, use fetch to make the
+      request, and update the page (without reloading). Use the Chrome Inspector
+      (Network, Fetch/XHR tab) to see it in action.
+    </p>
+
+    <div class="mt-4">
+      <a
+        class="bg-blue-400 hover:bg-blue-500 text-md text-white py-1 px-2 rounded-full"
+        href="/test-turbo-drive/">
+        Test Turbo Drive
+      </a>
+    </div>
+  </div>
+
+
+  <!-- Turbo Frames -->
+  <div class="mx-4 mb-8 p-6 border border-indigo-200 rounded-lg shadow-md w-96">
+
+    <h2 class="text-xl font-medium text-slate-800">Turbo Frames</h2>
+    <div class="mt-2 mb-4">
+      <a
+        class="underline underline-offset-2 text-sm font-medium text-indigo-400 hover:text-indigo-500"
+        href="https://turbo.hotwired.dev/handbook/frames">
+        Turbo Frames Documentation
+      </a>
+    </div>
+    <div class="mt-2 mb-4">
+        <a
+          class="underline underline-offset-2 text-sm font-medium text-indigo-400 hover:text-indigo-500"
+          href="/turbo-frames/">
+        See also Turbo Frames Page
+      </a>
+    </div>
+    <turbo-frame id="test-turbo-frames">
+      <div class="mt-4">
+        <a
+          class="bg-blue-400 hover:bg-blue-500 text-md text-white py-1 px-2 rounded-full"
+          href="/test-turbo-frames/">
+          Test Turbo Frames
+        </a>
+      </div>
+    </turbo-frame>
+
+  </div>
+
+
+  <!-- Hello, Stimulus -->
+  <div class="mx-4 mb-8 p-6 border border-indigo-200 rounded-lg shadow-md w-96">
+
+    <h2 class="text-xl font-medium text-slate-800">Hello, Stimulus</h2>
+    <div class="mt-2 mb-4">
+      <a
+        class="underline underline-offset-2 text-sm font-medium text-indigo-400 hover:text-indigo-500"
+        href="https://stimulus.hotwired.dev/handbook/hello-stimulus">
+        Hello Stimulus Documentation
+      </a>
+    </div>
+
+    <div data-controller="hello">
+      <input class="block placeholder-gray-400 border" placeholder="Enter name" data-hello-target="name" type="text">
+      <div class="mt-4">
+        <button
+          class="bg-blue-400 hover:bg-blue-500 active:bg-blue-600 focus:bg-blue-400 text-md text-white py-1 px-2 rounded-full"
+          data-action="hello#greet">
+          Test Stimulus
+        </button>
+      </div>
+      <p class="mt-2 text-md font-medium text-green-800" data-hello-target="display"></p>
+    </div>
+
+  </div>
+
+
+  <!-- Building Something Real -->
+  <div class="mx-4 mb-8 p-6 border border-indigo-200 rounded-lg shadow-md w-96">
+
+    <h2 class="text-xl font-medium text-slate-800">Building Something Real</h2>
+    <div class="mt-2 mb-4">
+      <a
+        class="underline underline-offset-2 text-sm font-medium text-indigo-400 hover:text-indigo-500"
+        href="https://stimulus.hotwired.dev/handbook/building-something-real">
+        Stimulus Documentation
+      </a>
+    </div>
+
+    {% for content in ['123456789', 'ABC-123-DEF-000'] %}
+      <div data-controller="clipboard">
+        <div class="flex gap-2 mb-2 items-center">
+          <div class="w-min">PIN</div>
+          <input data-clipboard-target="source" class="px-2 w-40 border border-gray-300" value="{{content}}">
+          <button
+            class="bg-blue-400 hover:bg-blue-500 active:bg-blue-600 focus:bg-blue-400 text-xs text-white py-1 px-2 rounded-full"
+            data-action="clipboard#copy">
+            Copy to Clipboard
+          </button>
+        </div>
+        <p class="mb-2 text-sm text-green-800" data-clipboard-target="display"></p>
+      </div>
+    {% endfor %}
+
+  </div>
+</div>

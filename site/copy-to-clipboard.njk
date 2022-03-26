@@ -1,0 +1,23 @@
+
+<turbo-frame id="copy-to-clipboard">
+
+  <div style="margin-bottom: 2em">
+    <a href="https://stimulus.hotwired.dev/handbook/building-something-real">Documentation</a>
+  </div>
+
+  <div data-controller="clipboard">
+    PIN: <input data-clipboard-target="source" type="text" value="123456" readonly>
+    <button data-action="clipboard#copy">Copy to Clipboard</button>
+  </div>
+
+  <div data-controller="clipboard">
+    PIN: <input data-clipboard-target="source" type="text" value="9876543" readonly>
+    <button data-action="clipboard#copy">Copy to Clipboard</button>
+  </div>
+
+  <div data-controller="clipboard">
+    PIN: <input data-clipboard-target="source" type="text" value="212-212" readonly>
+    <a href="#" data-action="clipboard#copy">Copy to Clipboard</a>
+  </div>
+
+</turbo-frame>

@@ -1,0 +1,93 @@
+
+<h1 class="m-4 text-2xl font-medium text-slate-800">Turbo Frames Example</h1>
+
+<!-- Turbo Drive -->
+<div class="p-6 mb-8 mx-4 border rounded-lg border-indigo-200 shadow-md">
+  <h2 class="mb-2 text-xl font-medium text-slate-800">Turbo Drive</h2>
+  <turbo-frame id="turbo-drive">
+
+    {% if action === "show" %}
+      <p class="mb-4">This is the turbo SHOW action.</p>
+      <a class="bg-blue-400 hover:bg-blue-500 text-md text-white py-1 px-2 rounded-full"
+         href="/turbo-frames-edit/">
+        Edit
+      </a>
+
+    {% elseif action === "edit" %}
+      <p class="mb-4">This is the turbo EDIT action.</p>
+      <a class="bg-blue-400 hover:bg-blue-500 text-md text-white py-1 px-2 rounded-full"
+         href="/turbo-frames/">
+        Show
+      </a>
+
+    {% else %}
+      <p class="mb-4">Error: The turbo drive operation should be show or edit!</p>
+    {% endif %}
+
+  </turbo-frame>
+</div>
+
+
+<!-- Stimulus -->
+<div class="p-6 mb-8 mx-4 border rounded-lg border-indigo-200 shadow-md">
+  <h2 class="mb-2 text-xl font-medium text-slate-800">Stimulus</h2>
+  <turbo-frame id="stimulus">
+
+    {% if action === "show" %}
+      <p class="mb-4">This is the stimulus SHOW action.</p>
+      <a class="bg-blue-400 hover:bg-blue-500 text-md text-white py-1 px-2 rounded-full"
+         href="/turbo-frames-edit/">
+        Edit
+      </a>
+
+    {% elseif action === "edit" %}
+      <p class="mb-4">This is the stimulus EDIT action.</p>
+      <a class="bg-blue-400 hover:bg-blue-500 text-md text-white py-1 px-2 rounded-full"
+         href="/turbo-frames/">
+        Show
+      </a>
+
+    {% else %}
+      <p class="mb-4">Error: The stimulus operation should be show or edit!</p>
+    {% endif %}
+
+  </turbo-frame>
+</div>
+
+
+<!-- Clipboard -->
+<div class="p-6 mb-8 mx-4 border rounded-lg border-indigo-200 shadow-md">
+  <h2 class="mb-2 text-xl font-medium text-slate-800">Clipboard</h2>
+  <turbo-frame id="clipboard">
+
+    {% if action === "show" %}
+      <p class="mb-4">This is the clipboard SHOW action.</p>
+      <a class="bg-blue-400 hover:bg-blue-500 text-md text-white py-1 px-2 rounded-full"
+         href="/turbo-frames-edit/">
+        Edit
+      </a>
+
+    {% elseif action === "edit" %}
+      <p class="mb-4">This is the clipboard EDIT action.</p>
+      <a class="bg-blue-400 hover:bg-blue-500 text-md text-white py-1 px-2 rounded-full"
+         href="/turbo-frames/">
+        Show
+      </a>
+
+    {% else %}
+      <p class="mb-4">Error: The clipboard operation should be show or edit!</p>
+    {% endif %}
+
+  </turbo-frame>
+</div>
+
+
+<h2 class="m-4 font-medium text-xl">How it Works</h2>
+<ul class="list-disc mb-8 mx-10">
+  <li>Eleventy generates two static HTML files: The first is this "show" page. The second is an "edit" page.</li>
+  <li>The two files are generated from the same Nunjucks template (turbo-frames-page.njk).</li>
+  <li>The template has if/then conditions driven by a show/edit variable in the front matter of each of the two top-level templates.</li>
+  <li>The main benefit is the fast, dynamic page behavior without writing any Javascript. The inline edits happen in about 50ms.</li>
+  <li>Another benefits is that the HTML and styling for both pages comes from a single template, which makes it easier to keep both pages consistent, using multiple cursors when editing, for example.</li>
+  <li>When a button is clicked, Turbo fetches the full show or edit page from the server, but only extracts the turbo-frame element it needs to update the page.</li>
+</ul>

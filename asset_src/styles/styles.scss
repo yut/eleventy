@@ -1,0 +1,16 @@
+// Order matters.
+// base: css reset. It needs to be first.
+// components: If you want to create css components.
+// utilities: All the tw utility classes.
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind aspect-ratio;
+@tailwind forms;
+@import "basic";
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+}

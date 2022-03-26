@@ -1,0 +1,3 @@
+[build]
+  publish = "public"   # directory for public files
+  command = "yarn build"
