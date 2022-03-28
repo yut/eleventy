@@ -108,3 +108,7 @@
     </div>
   </div>
 </nav>
+
+{% if helper.environment == "production" %}
+  <p class="bg-white text-orange-300 text-md mx-auto my-2 px-4">Under Construction: I'm fiddling with Eleventy, Tailwind, Tailwind UI, Hotwire Turbo, Hotwire Stimulus, Javascript, and Netlify.</p>
+{% endif %}
